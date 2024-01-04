@@ -24,7 +24,7 @@ Route::middleware(['auth'])->group(function () {
         return view('pages.app.dashboard-simpadu', ['type_menu' => '']);
     })->name('home');
     Route::resource('user', UserController::class);
-    
+
 });
 
 
