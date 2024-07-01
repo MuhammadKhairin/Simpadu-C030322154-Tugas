@@ -26,3 +26,7 @@ Route::post('/logout', [AuthController::class, 'logout'])
 
 Route::apiResource('schedules', ScheduleController::class)
     ->middleware('auth:sanctum');
+
+
+Route::apiResource('khs',ScheduleController::class)
+    ->middleware('auth:sanctum');
